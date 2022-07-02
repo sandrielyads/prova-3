@@ -1,0 +1,29 @@
+def matriztransposta(s, l):
+	for i in range(s):
+		y = []
+
+		for j in range(l):
+			y.append(matriz_a[j][i])
+
+		matriz_b.append(y)
+	print()
+
+	return matriz_b
+
+
+s = int(input("S: "))
+l = int(input("L: "))
+print()
+
+matriz_a = []
+matriz_b = []
+
+for i in range(l):
+	x = []
+
+	for j in range(s):
+		x.append(int(input("V: ")))
+
+	matriz_a.append(x)
+
+print(matriztransposta(s, l))
